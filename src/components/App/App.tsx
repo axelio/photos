@@ -6,7 +6,7 @@ import {
 
 import './App.css';
 import Main from '../Main/Main';
-import Sofia from '../Galleries/Sofia';
+import Bulgaria from '../Galleries/Bulgaria';
 import Sardinia from '../Galleries/Sardinia';
 import WinterBaltic from '../Galleries/WinterBaltic';
 import DifferentPlaces from '../Galleries/DifferentPlaces';
@@ -22,7 +22,7 @@ const App: React.FC = () => {
       <Router>
         <div className="app">
           <Route exact path="/" component={Main} />
-          <Route path='/sofia' component={Sofia} />
+          <Route path='/bulgaria' component={Bulgaria} />
           <Route path='/sardinia' component={Sardinia} />
           <Route path='/winterbaltic' component={WinterBaltic} />
           <Route path='/differentplaces' component={DifferentPlaces} />

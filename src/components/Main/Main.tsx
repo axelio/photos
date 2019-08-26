@@ -11,11 +11,11 @@ import LazyLoading from '../LazyLoading/LazyLoading';
 const Main: React.FC = () => {
 
     const items: JSX.Element[] = [
+        <Item layer={Layers.Grey} key="bulgaria" title="bulgaria" image={sofia} link='/bulgaria' />,
         <Item layer={Layers.DarkBlue} key="winterbaltic" title="winter baltic sea" image={boat} link='/winterbaltic' />,
         <Item layer={Layers.DarkGrey} key="differentplaces" title="different places" image={lisbon} link='/differentplaces' />,
         <Item layer={Layers.DarkBlue} key="aroundpoland" title="around poland" image={sea} link='/aroundpoland' />,
         <Item layer={Layers.DarkBlue} key="sardinia" title="sardinia" image={sardinia} link='/sardinia' />,
-        <Item layer={Layers.Grey} key="sofia" title="sofia" image={sofia} link='/sofia' />,
     ]
 
     return (

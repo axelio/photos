@@ -14,8 +14,7 @@ const images: PictureWithThumbnail[] = [
     { thumbnail: thumbnails.img7, photo: { desktop: desktopPhotos.img7, mobile: mobilePhotos.img7, title: "Morning", data: "Kraków" } },
     { thumbnail: thumbnails.img8, photo: { desktop: desktopPhotos.img8, mobile: mobilePhotos.img8, title: "Chill", data: "Kraków" },  },
     { thumbnail: thumbnails.img9, photo: { desktop: desktopPhotos.img9, mobile: mobilePhotos.img9, title: "Hey Joe", data: "Wrocław" } },
-    { thumbnail: thumbnails.img10, photo: { desktop: desktopPhotos.img10, mobile: mobilePhotos.img10, data: "Tatry" } },
-    { thumbnail: thumbnails.img11, photo: { desktop: desktopPhotos.img11, mobile: mobilePhotos.img11, data: "Tatry" } }
+    { thumbnail: thumbnails.img11, photo: { desktop: desktopPhotos.img11, mobile: mobilePhotos.img11, title: "Hiking", data: "Tatry" } }
 ]
 
 export default images;
