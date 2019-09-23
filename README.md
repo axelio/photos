@@ -1,1 +1,1 @@
-https://axweb.pl/#/
+https://axelio.github.io/photos/#
