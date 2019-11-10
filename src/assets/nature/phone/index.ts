@@ -4,7 +4,10 @@ import img3 from './3.jpeg';
 import img4 from './4.jpeg';
 import img5 from './5.jpeg';
 import img6 from './6.jpeg';
+import img7 from './7.jpeg';
+import img8 from './8.jpeg';
+import img9 from './9.jpeg';
 
 export {
-    img1, img2, img3, img4, img5, img6
+    img1, img2, img3, img4, img5, img6, img7, img8, img9
 }

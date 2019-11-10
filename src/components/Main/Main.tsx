@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Main.css';
-import { header, sofia, sardinia, boat, lisbon, sea } from '../../assets/background'
+import { header, boat, lisbon, sea } from '../../assets/background'
 import Item from './Item/Item';
 import { Layers } from './Item/types';
 import Footer from '../Footer/Footer';
@@ -11,11 +11,9 @@ import LazyLoading from '../LazyLoading/LazyLoading';
 const Main: React.FC = () => {
 
     const items: JSX.Element[] = [
-        <Item layer={Layers.Grey} key="bulgaria" title="bulgaria" image={sofia} link='/bulgaria' />,
+        <Item layer={Layers.DarkBlue} key="nature" title="nature" image={sea} link='/nature' />,
+        <Item layer={Layers.DarkGrey} key="architecture" title="architecture" image={lisbon} link='/architecture' />,
         <Item layer={Layers.DarkBlue} key="winterbaltic" title="winter baltic sea" image={boat} link='/winterbaltic' />,
-        <Item layer={Layers.DarkGrey} key="differentplaces" title="different places" image={lisbon} link='/differentplaces' />,
-        <Item layer={Layers.DarkBlue} key="aroundpoland" title="around poland" image={sea} link='/aroundpoland' />,
-        <Item layer={Layers.DarkBlue} key="sardinia" title="sardinia" image={sardinia} link='/sardinia' />,
     ]
 
     return (

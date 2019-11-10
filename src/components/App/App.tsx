@@ -6,11 +6,9 @@ import {
 
 import './App.css';
 import Main from '../Main/Main';
-import Bulgaria from '../Galleries/Bulgaria';
-import Sardinia from '../Galleries/Sardinia';
+import Architecture from '../Galleries/Architecture';
 import WinterBaltic from '../Galleries/WinterBaltic';
-import DifferentPlaces from '../Galleries/DifferentPlaces';
-import Poland from '../Galleries/Poland/Poland';
+import Nature from '../Galleries/Nature';
 import { StateContext, initialState, reducer } from '../../state/store';
 import FullPhoto from '../FullPhoto';
 
@@ -22,11 +20,9 @@ const App: React.FC = () => {
       <Router>
         <div className="app">
           <Route exact path="/" component={Main} />
-          <Route path='/bulgaria' component={Bulgaria} />
-          <Route path='/sardinia' component={Sardinia} />
+          <Route path='/architecture' component={Architecture} />
           <Route path='/winterbaltic' component={WinterBaltic} />
-          <Route path='/differentplaces' component={DifferentPlaces} />
-          <Route path='/aroundpoland' component={Poland} />
+          <Route path='/nature' component={Nature} />
           <Route path ='/preview' component={FullPhoto} />
         </div>
       </Router>
