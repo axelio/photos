@@ -11,11 +11,11 @@ import img10 from './10.jpeg';
 import img11 from './11.jpeg';
 import img12 from './12.jpeg';
 import img13 from './13.jpeg';
-import img14 from './13.jpeg';
-import img15 from './13.jpeg';
-import img16 from './13.jpeg';
-import img17 from './13.jpeg';
-import img18 from './13.jpeg';
+import img14 from './14.jpeg';
+import img15 from './15.jpeg';
+import img16 from './16.jpeg';
+import img17 from './17.jpeg';
+import img18 from './18.jpeg';
 
 
 export {
