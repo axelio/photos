@@ -17,6 +17,13 @@
     outline: 1px solid #d6d6d6;
 }
 
+.spinnerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 450px);
+}
+
 @media (max-width: 425px) {
     .thumbnail {
         margin: 10px 0;
