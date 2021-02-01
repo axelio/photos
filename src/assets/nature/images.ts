@@ -6,7 +6,6 @@ import { PictureWithThumbnail } from '../../common/types';
 
 const images: PictureWithThumbnail[] = [
     { thumbnail: thumbnails.img1, photo: { desktop: desktopPhotos.img1, mobile: mobilePhotos.img1, title: "Baltic", data: "Poland, 2016" } },
-    { thumbnail: thumbnails.img2, photo: { desktop: desktopPhotos.img2, mobile: mobilePhotos.img2, title: "MTB Gdańsk", data: "Poland, 2016" } },
     { thumbnail: thumbnails.img3, photo: { desktop: desktopPhotos.img3, mobile: mobilePhotos.img3, title: "Sardinia", data: "Italy, 2016" } },
     { thumbnail: thumbnails.img9, photo: { desktop: desktopPhotos.img9, mobile: mobilePhotos.img9, title: "Sardinia", data: "Italy, 2017" } },
     { thumbnail: thumbnails.img7, photo: { desktop: desktopPhotos.img7, mobile: mobilePhotos.img7, title: "Tenerife", data: "Spain, 2017" } },
