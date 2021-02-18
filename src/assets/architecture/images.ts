@@ -10,7 +10,6 @@ const images: PictureWithThumbnail[] = [
     { thumbnail: thumbnails.img3, photo: { desktop: desktopPhotos.img3, mobile: mobilePhotos.img3, title: "Warsaw", data: "Poland, 2018" } },
     { thumbnail: thumbnails.img4, photo: { desktop: desktopPhotos.img4, mobile: mobilePhotos.img4, title: "Warsaw", data: "Poland, 2018" } },
     { thumbnail: thumbnails.img8, photo: { desktop: desktopPhotos.img8, mobile: mobilePhotos.img8, title: "Wrocław", data: "Hey Joe Guitar World Record, Poland, 2018" } },
-    { thumbnail: thumbnails.img2, photo: { desktop: desktopPhotos.img2, mobile: mobilePhotos.img2, title: "Sardinia", data: "Italy, 2016" } },
     { thumbnail: thumbnails.img5, photo: { desktop: desktopPhotos.img5, mobile: mobilePhotos.img5, title: "Sardinia", data: "Italy, 2017" } },
     { thumbnail: thumbnails.img6, photo: { desktop: desktopPhotos.img6, mobile: mobilePhotos.img6, title: "Sardinia", data: "Italy, 2017" } },
     { thumbnail: thumbnails.img14, photo: { desktop: desktopPhotos.img14, mobile: mobilePhotos.img14, title: "Tenerife", data: "Spain, 2017" } },
