@@ -1,3 +1,3 @@
-Gallery mechanism implemented for one of the projects at work
+Photo gallery mechanism implemented for one of the commercial projects.
 
 https://axelio.github.io/photos/#
