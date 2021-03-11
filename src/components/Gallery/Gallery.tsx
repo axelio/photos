@@ -17,7 +17,7 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
         return () => {
             dispatch({ type: ActionNames.SetScrollYPosition, yScroll: window.scrollY });
         }
-    }, []);
+    }, [dispatch, state.scrollYPosition]);
 
     const imageLoaded = () => {
         setLoadedImages(loadedImages + 1);

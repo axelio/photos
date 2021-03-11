@@ -13,7 +13,7 @@ const LazyLoading: React.FC<LazyLoadingProps> = ({ className, items }) => {
         return () => {
             dispatch({ type: ActionNames.SetScrollYPosition, yScroll: 0 });
         }
-    }, []);
+    }, [dispatch]);
 
 
     const loadMoreItems = () => {

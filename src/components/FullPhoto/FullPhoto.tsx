@@ -14,7 +14,7 @@ const FullPhoto: React.FC<FullPhotoRouterProps> = ({ location }) => {
     const [currentPhotoIndex, setCurrentPhotoIndex] = useState(selectedPhotoIndex);
     const [showDescription, setShowDescription] = useState(false);
     const [showButtons, setShowButtons] = useState(true);
-    const [isPhone, setIsPhone] = useState(window.innerWidth < 768);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
     useEffect(() => {
         window.addEventListener('keydown', handleKeyPress);
@@ -26,10 +26,12 @@ const FullPhoto: React.FC<FullPhotoRouterProps> = ({ location }) => {
         }
     });
 
-    if (images.length === 0 || isNaN(selectedPhotoIndex)) return <Redirect to='/' />
+    useEffect(() => {
+        if(isMobile && document.fullscreenEnabled && !document.fullscreenElement) 
+            document.documentElement.requestFullscreen();
+    }, [isMobile]);
 
-    const photos = images.map(i => i.photo);
-    const photo = photos[currentPhotoIndex];
+    if (images.length === 0 || isNaN(selectedPhotoIndex)) return <Redirect to='/' />
 
     const handleKeyPress = (event: any) => {
         switch (event.keyCode) {
@@ -48,9 +50,12 @@ const FullPhoto: React.FC<FullPhotoRouterProps> = ({ location }) => {
         }
     }
 
-    const handleWindowResize = () => setIsPhone(window.innerWidth < 768);
+    const handleWindowResize = () => setIsMobile(window.innerWidth < 768);
 
     const hideDescription = () => setShowDescription(false);
+
+    const photos = images.map(i => i.photo);
+    const photo = photos[currentPhotoIndex];
 
     const showNextPicture = () => {
         showDescription && hideDescription();
@@ -73,13 +78,16 @@ const FullPhoto: React.FC<FullPhotoRouterProps> = ({ location }) => {
 
     const onPhotoClicked = () => setShowButtons(prevShowButtons => !prevShowButtons);
 
-    const closeFullPhoto = () => window.history.back();
+    const closeFullPhoto = () => {
+        window.history.back()
+        if (document.exitFullscreen && document.fullscreenElement) document.exitFullscreen();
+    };
 
     return (
         <Swipeable onSwipedLeft={showNextPicture} onSwipedRight={showPreviousPicture}>
             <div className='photo-wrapper' id='photo-wrapper'>
                 <div className='close-space' onClick={closeFullPhoto}></div>
-                <img src={isPhone ? photo.mobile : photo.desktop} className='photo' onClick={onPhotoClicked} alt="" />
+                <img src={isMobile ? photo.mobile : photo.desktop} className='photo' onClick={onPhotoClicked} alt="" />
 
                 {showDescription && <div className='description' onClick={hideDescription}>
                     <div className='layer'></div>
