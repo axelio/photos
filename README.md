@@ -1,3 +1,3 @@
-Photo gallery mechanism implemented for one of the commercial projects.
+One of my first React projects - photo gallery mechanism.
 
 https://axelio.github.io/photos/#
